@@ -1,0 +1,78 @@
+/* Sidebar Title */
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Container jiske andar radio button aur text hai */
+.sidebar-label-container {
+  display: block;
+  position: relative;
+  padding-left: 35px; /* Circle ke liye jagah - Isse overlap band hoga */
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+/* Asli radio button ko chhupane ke liye */
+.sidebar-label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Hamara banaya hua custom circle (Checkmark) */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid #ccc; /* Visibility ke liye */
+  z-index: 1;
+}
+
+/* Jab mouse upar le jayein */
+.sidebar-label-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Jab select (Click) karein toh blue color */
+.sidebar-label-container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* All button ke liye special gradient (Image 5 ke liye) */
+.all {
+  background: linear-gradient(to bottom right, blue, crimson);
+}
+
+/* Circle ke andar ka chhota white dot */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sidebar-label-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.sidebar-label-container .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Line separator */
+.line {
+  margin-top: 3rem;
+  border: 0.5px solid #ccc;
+}

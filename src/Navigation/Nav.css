@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    border-bottom: 2px solid#f3f3f3;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+    margin-left: 2rem;
+}
+
+input{
+    padding: 12px 20px;
+    border: none;
+    background: #f7f6f6;
+    outline: none;
+    margin-right: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 14rem;
+    color: #494949;
+}
+
+/* Icons ke pure group (container) ke liye */
+.profile-container {
+  display: flex;
+  gap: 2rem; /* Isse teeno icons ke beech barabar gap aa jayega */
+  align-items: center;
+}
+
+/* Individual icons ke look aur thode space ke liye */
+.nav-icons {
+  width: 25px;
+  height: 25px;
+  margin-left: 1rem; /* Extra space agar chahiye ho */
+  color: #494949;
+  cursor: pointer;
+}
+
+/* Jab mouse icon par le jayein */
+.nav-icons:hover {
+  color: black;
+}

@@ -1,0 +1,39 @@
+/* Container styling */
+.sidebar-label-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+/* Original radio button hide karein */
+.sidebar-label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Circle design */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+/* All button ka gradient background */
+.all {
+  background: linear-gradient(blue, crimson);
+}
+
+/* Selection effect */
+.sidebar-label-container input:checked ~ .checkmark {
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}

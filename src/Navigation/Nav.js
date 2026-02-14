@@ -2,7 +2,6 @@
 import { AiOutlineShoppingCart, AiOutlineUser } from "react-icons/ai";
 import "./Nav.css";
 
-// 1. Function ke bracket mein { query, handleInputChange } likhna zaroori hai
 function Nav({ query, handleInputChange }) {
   return (
     <nav>
@@ -11,23 +10,21 @@ function Nav({ query, handleInputChange }) {
           type="text"
           className="search-input"
           placeholder="Enter your Search Shoes."
-          // 2. handleInputChange ko onChange se connect kiya
-          onChange={handleInputChange} 
-          // 3. value ko query state se connect kiya
-          value={query} 
+          onChange={handleInputChange}
+          value={query}
         />
       </div>
 
       <div className="profile-container">
-        <button href="#">
+        <button type="button">
           <FiHeart className="nav-icons" />
         </button>
 
-        <button href="#">
+        <button type="button">
           <AiOutlineShoppingCart className="nav-icons" />
         </button>
 
-        <button href="#">
+        <button type="button">
           <AiOutlineUser className="nav-icons" />
         </button>
       </div>
